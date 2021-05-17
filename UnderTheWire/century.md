@@ -20,8 +20,8 @@ Password - ```5.1.14393.3866``` <br>
 The password for Century3 is the name of the built-in cmdlet that performs the wget like function within PowerShell PLUS the name of the file on the desktop. <br>
 
 ### Note
-– If the name of the cmdlet is “get-web” and the file on the desktop is named “1234”, the password would be “get-web1234”. <br>
-– The password will be lowercase no matter how it appears on the screen. <br>
+- If the name of the cmdlet is “get-web” and the file on the desktop is named “1234”, the password would be “get-web1234”. <br>
+- The password will be lowercase no matter how it appears on the screen. <br>
 
 ### Resolution
 
@@ -144,7 +144,7 @@ And finally, in order to simplify the text format, we used the instruction Delim
 
 ![image](https://user-images.githubusercontent.com/25660910/118501810-0162fb80-b721-11eb-8614-0ec27e0ed5b9.png)
 
-The password is: ```pierid``` <br>
+Password - ```pierid``` <br>
 
 ## Century 10
 
@@ -152,8 +152,8 @@ The password for Century11 is the 10th and 8th word of the Windows Update servic
 
 ### Note
 
-– The password will be lowercase no matter how it appears on the screen. <br>
-– If the 10th and 8th word of the service description is “apple” and “juice” and the name of the file on the desktop is “88”, the password would be “applejuice88”. <br>
+- The password will be lowercase no matter how it appears on the screen. <br>
+- If the 10th and 8th word of the service description is “apple” and “juice” and the name of the file on the desktop is “88”, the password would be “applejuice88”. <br>
 
 ### Resolution
 
@@ -174,8 +174,8 @@ The password: ```windowsupdates110``` <br>
 The password for Century12 is the name of the hidden file within the contacts, desktop, documents, downloads, favorites, music, or videos folder in the user’s profile. <br>
 
 ### Note
-– Exclude “desktop.ini”. <br>
-– The password will be lowercase no matter how it appears on the screen. <br>
+- Exclude “desktop.ini”. <br>
+- The password will be lowercase no matter how it appears on the screen. <br>
 
 ### Resolution
 
@@ -228,7 +228,7 @@ Password - ```755``` <br>
 The password for Century15 is the number of times the word “polo” appears within the file on the desktop. <br>
 
 ### Note
-– You should count the instances of the whole word only... <br>
+- You should count the instances of the whole word only... <br>
 
 ### Resolution
 
