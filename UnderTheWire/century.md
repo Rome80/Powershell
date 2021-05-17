@@ -9,7 +9,7 @@ The password for Century2 is the build version of the instance of PowerShell ins
 
 ### Resolution
 
-To check the powershell version we can use the command $PSVersionTable, which is a read-only hash table that returns information about the Powershell version. <br>
+To check the powershell version we can use the command **$PSVersionTable**, which is a read-only hash table that returns information about the Powershell version. <br>
 
 ![image](https://user-images.githubusercontent.com/25660910/118482263-64966300-b70c-11eb-91d0-9229af05883e.png)
 
@@ -36,7 +36,7 @@ The password for Century4 is the number of files on the desktop. <br>
 
 ![image](https://user-images.githubusercontent.com/25660910/118484058-b4762980-b70e-11eb-9664-51de48ab7ca3.png)
 
-To see the number of files that exists in a certain folder we use the command Get-ChildItem -File. This will only show us a list of files so we can add the command Measure-Object <br>
+To see the number of files that exists in a certain folder we use the command **Get-ChildItem -File**. This will only show us a list of files so we can add the command **Measure-Object** <br>
 
 Password - ```123``` <br>
  
@@ -69,7 +69,7 @@ First, let's start with the easy part! Let's see the name of the file located in
 
 ![image](https://user-images.githubusercontent.com/25660910/118491093-8bf22d80-b716-11eb-8923-c7dc6aa05845.png)
 
-After the file's name has been found (3347), we have to find a way to find out the domain name. With the cmdlet Get-WmiObect, we can obtain some information related to the system. For example, we can retrieve information about local processes. <br>
+After the file's name has been found (3347), we have to find a way to find out the domain name. With the cmdlet **Get-WmiObect**, we can obtain some information related to the system. For example, we can retrieve information about local processes. <br>
 
 ![image](https://user-images.githubusercontent.com/25660910/118492692-2c951d00-b718-11eb-9ce1-835c17d3301c.png)
 
@@ -81,7 +81,7 @@ The password for Century7 is the number of folders on the desktop. <br>
 
 ### Resolution
 
-As seen before withe the command Get-ChildItem we can get a list of files or folders, depending on the instruction used. In this case, to retrieve the number of folders, we use the instruction -Directory. <br>
+As seen before withe the command **Get-ChildItem** we can get a list of files or folders, depending on the instruction used. In this case, to retrieve the number of folders, we use the instruction -Directory. <br>
 
 ![image](https://user-images.githubusercontent.com/25660910/118494770-68c97d00-b71a-11eb-9cb4-9ed63330075a.png)
 
@@ -97,9 +97,9 @@ The password for Century8 is in a readme file somewhere within the contacts, des
 
 ### Resolution
 
-To find this file, we used some additional instructions to the Get-ChildItem command: <br>
-- Recurse: to search sub-directories <br>
-- Error Action SIlentlyContinue: to not display the error <br>
+To find this file, we used some additional instructions to the **Get-ChildItem** command: <br>
+- **Recurse**: to search sub-directories <br>
+- **Error Action SIlentlyContinue**: to not display the error <br>
 
 ![image](https://user-images.githubusercontent.com/25660910/118496784-5b14f700-b71c-11eb-9ea1-754eb8ca0655.png)
 
@@ -118,7 +118,7 @@ The password for Century9 is the number of unique entries within the file on the
 
 ![image](https://user-images.githubusercontent.com/25660910/118500477-b85e7780-b71f-11eb-9679-1a8dfed7ed4b.png)
 
-The command Get-Content will display to us the content of a certain file. We had to add the instruction sort in order to use the command Get-Unique, which allow us to see only the unique entries. Finally to count those unique entries we had the command Measure-Object. <br>
+The command Get-Content will display to us the content of a certain file. We had to add the instruction **sort** in order to use the command **Get-Unique**, which allow us to see only the unique entries. Finally to count those unique entries we had the command **Measure-Object**. <br>
 
 Password - ```696``` <br>
 
@@ -140,7 +140,7 @@ Then we had to see what was the content of that file <br>
 
 ![image](https://user-images.githubusercontent.com/25660910/118501301-78e45b00-b720-11eb-8126-5233f745d337.png)
 
-And finally, in order to simplify the text format, we used the instruction Delimiter to put print a word by line. After that with the instruction "TotalCount 161", we were able to print 161 words in order to achieve the pruposed goal. <br>
+And finally, in order to simplify the text format, we used the instruction **Delimiter** to put print a word by line. After that with the instruction **TotalCount 161**, we were able to print 161 words in order to achieve the proposed goal. <br>
 
 ![image](https://user-images.githubusercontent.com/25660910/118501810-0162fb80-b721-11eb-8614-0ec27e0ed5b9.png)
 
@@ -161,7 +161,7 @@ The  file located in the desktop directory is: <br>
 
 ![image](https://user-images.githubusercontent.com/25660910/118503417-83075900-b722-11eb-98ac-6603509e117d.png)
 
-To get the Windows Update service description, we had to find out what was the name of the service (wuauserv). After that, we use the command Get-WmiObject, where the object selected was the update service. <br>
+To get the Windows Update service description, we had to find out what was the name of the service (wuauserv). After that, we use the command **Get-WmiObject**, where the object selected was the update service. <br>
 
 ![image](https://user-images.githubusercontent.com/25660910/118508136-cf549800-b726-11eb-87d5-2e33718fdd87.png)
 
@@ -216,7 +216,7 @@ The password for Century14 is the number of words within the file on the desktop
 
 ### Resolution
 
-To get the number of words within the file "countmywords" we used again the instruction delimiter to show a word per line and the we count the number of lines that existed in the file. <br>
+To get the number of words within the file "countmywords" we used again the instruction **Delimiter** to show a word per line and the we count the number of lines that existed in the file. <br>
 
 ![image](https://user-images.githubusercontent.com/25660910/118511339-b8fc0b80-b729-11eb-82eb-435266ff1fa3.png)
 
