@@ -1,6 +1,6 @@
 ## Century 0
 
-Credentials - ```Cyborg1:Cyborg1``` <br>
+Credentials - ```Ccentury1:century1``` <br>
 
 ## Century 1
 
