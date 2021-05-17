@@ -59,4 +59,26 @@ The password for Century6 is the short name of the domain in which this system r
 – If the short name of the domain is “blob” and the file on the desktop is named “1234”, the password would be “blob1234”.
 – The password will be lowercase no matter how it appears on the screen.
 
+### Resolution
+
+First, let's start with the easy part! Let's see the name of the file located in the Desktop directory
+
+![image](https://user-images.githubusercontent.com/25660910/118491093-8bf22d80-b716-11eb-8923-c7dc6aa05845.png)
+
+After the file's name has been found (3347), we have to find a way to find out the domain name. With the cmdlet Get-WmiObect, we can obtain some information related to the system. For example, we can retrieve information about local processes
+
+![image](https://user-images.githubusercontent.com/25660910/118492692-2c951d00-b718-11eb-9ce1-835c17d3301c.png)
+
+Password - underthewire3347
+
+## Century 6
+
+The password for Century7 is the number of folders on the desktop.	
+
+
+
+
+
+
+
 
