@@ -1,3 +1,7 @@
+## Century 0
+
+Credentials - ```Cyborg1:Cyborg1``` <br>
+
 ## Century 1
 
 The password for Century2 is the build version of the instance of PowerShell installed on this system.
