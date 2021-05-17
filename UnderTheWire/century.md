@@ -45,3 +45,18 @@ The password for Century5 is the name of the file within a directory on the desk
 – The password will be lowercase no matter how it appears on the screen. <br>
 
 ### Resolution
+
+Here we only have to move to the specified directory
+
+![image](https://user-images.githubusercontent.com/25660910/118484887-a5dc4200-b70f-11eb-9e59-fa37126130b0.png)
+
+
+## Century 5
+
+The password for Century6 is the short name of the domain in which this system resides in PLUS the name of the file on the desktop.
+
+### Note
+– If the short name of the domain is “blob” and the file on the desktop is named “1234”, the password would be “blob1234”.
+– The password will be lowercase no matter how it appears on the screen.
+
+
