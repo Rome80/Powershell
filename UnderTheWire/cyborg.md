@@ -28,7 +28,7 @@ The password for cyborg3 is the host A record IP address for CYBORG718W100N PLUS
 - If the IP is “10.10.1.5” and the file on the desktop is called “_address”, then the password is “10.10.1.5_address”. <br>
 - The password will be lowercase no matter how it appears on the screen.
 
-## Resolution
+### Resolution
 
 In the image below is the file name.
 
