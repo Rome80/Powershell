@@ -57,7 +57,7 @@ The password for Century6 is the short name of the domain in which this system r
 
 ### Note
 – If the short name of the domain is “blob” and the file on the desktop is named “1234”, the password would be “blob1234”.
-– The password will be lowercase no matter how it appears on the screen.
+– The password will be lowercase no matter how it appears on the screen. <br>
 
 ### Resolution
 
@@ -75,10 +75,77 @@ Password - underthewire3347
 
 The password for Century7 is the number of folders on the desktop.	
 
+### Resolution
+
+As seen before withe the command Get-ChildItem we can get a list of files or folders, depending on the instruction used. In this case, to retrieve the number of folders, we use the instruction -Directory
+
+![image](https://user-images.githubusercontent.com/25660910/118494770-68c97d00-b71a-11eb-9cb4-9ed63330075a.png)
+
+Password - 197
+
+## Century 7
+
+The password for Century8 is in a readme file somewhere within the contacts, desktop, documents, downloads, favorites, music, or videos folder in the user’s profile.
+
+### Note
+
+The password will be lowercase no matter how it appears on the screen. <br>
+
+### Resolution
+
+To find this file, we used some additional instructions to the Get-ChildItem command:
+- Recurse: to search sub-directories
+- Error Action SIlentlyContinue: to not display the error
+
+![image](https://user-images.githubusercontent.com/25660910/118496784-5b14f700-b71c-11eb-9ea1-754eb8ca0655.png)
+
+And inside the file we have:
+
+![image](https://user-images.githubusercontent.com/25660910/118499382-c8c22280-b71e-11eb-83e7-b8964a8990fc.png)
 
 
+## Century 8
+
+The password for Century9 is the number of unique entries within the file on the desktop.
+
+### Resolution
+
+![image](https://user-images.githubusercontent.com/25660910/118500477-b85e7780-b71f-11eb-9679-1a8dfed7ed4b.png)
+
+The command Get-Content will display to us the content of a certain file. We had to add the instruction sort in order to use the command Get-Unique, which allow us to see only the unique entries. Finally to count those unique entries we had the command Measure-Object.
 
 
+## Century 9
 
+The password for Century10 is the 161st word within the file on the desktop.
 
+### Note
 
+– The password will be lowercase no matter how it appears on the screen. <br>
+
+### Resolution
+
+First let's check the item in the desktop directory
+
+![image](https://user-images.githubusercontent.com/25660910/118500820-06737b00-b720-11eb-8eb0-3af828004ae1.png)
+
+Then we had to see whtat was the content of that file
+
+![image](https://user-images.githubusercontent.com/25660910/118501301-78e45b00-b720-11eb-8126-5233f745d337.png)
+
+And finally, in order to simplify the text format, we used the instruction Delimiter to put print a word by line. After that with the instruction "TotalCount 161", we were able to print 161 words in order to achieve the pruposed goal.
+
+![image](https://user-images.githubusercontent.com/25660910/118501810-0162fb80-b721-11eb-8614-0ec27e0ed5b9.png)
+
+The password is: pierid
+
+## Century 10
+
+The password for Century11 is the 10th and 8th word of the Windows Update service description combined PLUS the name of the file on the desktop.
+
+### Note
+
+– The password will be lowercase no matter how it appears on the screen.
+– If the 10th and 8th word of the service description is “apple” and “juice” and the name of the file on the desktop is “88”, the password would be “applejuice88”. <br>
+
+### Resolution
