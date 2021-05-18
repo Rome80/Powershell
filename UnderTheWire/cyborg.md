@@ -105,6 +105,88 @@ Once again, we used the command **Get-ADUser**, but with some additional instruc
 Password - ```rowray_timer```
 
 
+## Cyborg 6
+
+The password for cyborg7 is the decoded text of the string within the file on the desktop. <br>
+
+### Note
+- The password is the last word of the string. For example, if it is “I like PowerShell”, the password would be “powershell”. <br>
+- The password will be lowercase no matter how it appears on the screen. <br>
+- There are no spaces in the answer. <br>
+
+### Resolution
+
+![image](https://user-images.githubusercontent.com/25660910/118629128-33c63480-b7c5-11eb-8795-659dbd96bb86.png)
+
+Well... No cmdlet available, so we had to talk with google. The command is presented below <br>
+
+![image](https://user-images.githubusercontent.com/25660910/118629318-62dca600-b7c5-11eb-9ca3-2fc171641fa2.png)
+
+Password - ```cybergeddon```
+
+## Cyborg 7
+
+The password for cyborg8 is the executable name of a program that will start automatically when cyborg7 logs in. <br>
+
+### Note
+- The password will be lowercase no matter how it appears on the screen. <br>
+
+### Resolution
+
+To achieve this solution, once again we had to google it. We found the command **Get-CimInstance Win32_StartupCommand**. This command is used to get the CIM (Common Information Model) instances of a class from a CIM Server. It can be added some instructions to this command like the **Win32_StartupCommand** that it's used to find the startup applications.
+
+![image](https://user-images.githubusercontent.com/25660910/118633912-e39da100-b7c9-11eb-9de2-eba8d1467966.png)
+
+Password - ```skynet```
+
+## Cyborg 8
+
+The password for cyborg9 is the Internet zone that the picture on the desktop was downloaded from.
+
+### Note
+- The password will be lowercase no matter how it appears on the screen. <br>
+
+### Resolution
+
+We needed to access to the image's metadata. After some research, we found the command **Get-Item -Stream**. The instruction -stream allows us to get specified alternate NTFS file streams from the file, such as the zone identifier! <br>
+
+![image](https://user-images.githubusercontent.com/25660910/118643466-7fcca580-b7d4-11eb-9a5b-c6ff3050757c.png)
+
+
+Password - ```4```
+
+## Cyborg 9
+
+The password for cyborg10 is the first name of the user with the phone number of 876-5309 listed in Active Directory PLUS the name of the file on the desktop. <br>
+
+### Note
+- If the first name “chris” and the file on the desktop is called “23”, then the password is “chris23”. <br>
+- The password will be lowercase no matter how it appears on the screen. <br>
+
+### Resolution
+
+![image](https://user-images.githubusercontent.com/25660910/118667854-41db7b80-b7ec-11eb-8ba0-32fbe8967d75.png)
+
+Then, we had to filter the properties through the phone number. After some research, we were able to filter through the field **telephonenumber** <br>
+
+![image](https://user-images.githubusercontent.com/25660910/118667230-bb269e80-b7eb-11eb-8c50-6d9109b9f219.png)
+
+Password - ```onita99```
+
+
+## Cyborg 10
+
+The password for cyborg11 is the description of the Applocker Executable deny policy for ill_be_back.exe PLUS the name of the file on the desktop. <br>
+
+### Note
+- If the description is “green$” and the file on the desktop is called “28”, then the password is “green$28”. <br>
+- The password will be lowercase no matter how it appears on the screen. <br>
+
+
+### Resolution
+
+
+
 
 
 
