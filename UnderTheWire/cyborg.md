@@ -84,6 +84,7 @@ With this command, we could see the versions of the different modules
 
 ![image](https://user-images.githubusercontent.com/25660910/118619147-396b4c80-b7bc-11eb-9738-6a2074150fb2.png)
 
+Password - ```bacon_eggs```
 
 ## Cyborg 5
 
