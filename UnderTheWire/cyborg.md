@@ -287,7 +287,13 @@ Password - ```propshts_objects```
 
 ## Cyborg 15
 
-END
+Congratulations! <br>
+
+You have successfully made it to the end! <br>
+
+Try your luck with other games brought to you by the Under The Wire team. <br>
+
+Thanks for playing! 
 
 
 
