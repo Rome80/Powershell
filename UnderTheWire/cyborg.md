@@ -185,6 +185,113 @@ The password for cyborg11 is the description of the Applocker Executable deny po
 
 ### Resolution
 
+![image](https://user-images.githubusercontent.com/25660910/118673246-c0d2b300-b7f0-11eb-9026-75439fe910a5.png)
+
+To work with the Applocker policies we have the command **Get-AppLockerPolicy**. <br>
+
+![image](https://user-images.githubusercontent.com/25660910/118673155-b0223d00-b7f0-11eb-8fe9-e49aff07de16.png)
+
+Password - ```terminated!99```
+
+
+## Cyborg 11
+
+The password for cyborg12 is located in the IIS log. The password is not Mozilla or Opera. <br>
+
+### Note
+
+-  The password will be lowercase no matter how it appears on the screen. <br>
+
+
+### Resolution
+
+To know the location we had to google it.
+
+![image](https://user-images.githubusercontent.com/25660910/118679257-a51ddb80-b7f5-11eb-8d61-cbcaa7040bb7.png)
+
+After knowing the location, we try to print the content of the file but it was huge. So we had to parse it. In the description of exercise, it was said that the password was not Mozilla or Opera, so maybe that could be a starting point to parse the file. <br>
+
+![image](https://user-images.githubusercontent.com/25660910/118679489-d4cce380-b7f5-11eb-8169-81cb1da8f256.png)
+
+Et voilá! We could display only a few lines, which contains the password. <br>
+
+Password - ```spaceballs```
+
+## Cyborg 12
+
+The password for cyborg13 is the first four characters of the base64 encoded full path to the file that started the i_heart_robots service PLUS the name of the file on the desktop.
+
+### Note 
+- An example of a full path would be ‘c:\some_folder\test.exe’.
+- Be sure to use ‘UTF8’ in your encoding.
+- If the encoded base64 is “rwmed2fdreewrt34t” and the file on the desktop is called “_address”, then the password is “rwme_address”.
+- The password will be lowercase no matter how it appears on the screen.
+
+
+### Resolution
+
+![image](https://user-images.githubusercontent.com/25660910/118687229-aef70d00-b7fc-11eb-9208-a52ca5a61c66.png)
+
+Then we used the cmdlet Get-CimInstance because we already knew the service name. We only needed to found out the path name. <br>
+
+![image](https://user-images.githubusercontent.com/25660910/118689458-ed8dc700-b7fe-11eb-8773-b0b58626aaf0.png)
+
+And finally we were able to encode the full path to base64. <br>
+
+![image](https://user-images.githubusercontent.com/25660910/118687108-8ec74e00-b7fc-11eb-9cb3-c2fc08303ed3.png)
+
+Password - ```yzpc_heart```
+
+
+## Cyborg 13
+
+The password cyborg14 is the number of days the refresh interval is set to for DNS aging for the underthewire.tech zone PLUS the name of the file on the desktop.
+
+### Note
+
+- If the days are set to “08:00:00:00” and the file on the desktop is called “_tuesday”, then the password is “8_tuesday”.
+- The password will be lowercase no matter how it appears on the screen.
+
+
+### Resolution
+
+![image](https://user-images.githubusercontent.com/25660910/118690293-d56a7780-b7ff-11eb-8d7f-b7ee1be1dd1f.png)
+
+With the **Get-Command** we were able to identify several types of DNS commands, and in the middle of them was... **Get-DnsServerZoneAging**. 
+
+![image](https://user-images.githubusercontent.com/25660910/118691184-b6201a00-b800-11eb-9fab-769280e061c5.png)
+
+Password - ```22_days```
+
+
+## Cyborg 14
+
+The password for cyborg15 is the caption for the DCOM application setting for application ID {59B8AFA0-229E-46D9-B980-DDA2C817EC7E} PLUS the name of the file on the desktop.
+
+### Note
+
+- If the caption is “dcom” and the file on the desktop is called “_address”, then the password is “dcom_address”. <br>
+- The password will be lowercase no matter how it appears on screen. <br>
+
+### Resolution
+
+![image](https://user-images.githubusercontent.com/25660910/118786232-82d59d80-b889-11eb-85cf-79fa64a57731.png)
+
+With the cmdlet **Get-CimInstance** we searched for the class name given as a hint **win32_DCOMApplicationSetting** and we found several information like the **AppID**. So we filtered the search as shown below. <br>
+
+
+![image](https://user-images.githubusercontent.com/25660910/118788204-76524480-b88b-11eb-943b-55a791ec5942.png)
+
+Password - ```propshts_objects```
+
+
+## Cyborg 15
+
+END
+
+
+
+
 
 
 
